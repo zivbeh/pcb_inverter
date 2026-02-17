@@ -251,37 +251,34 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_SwitchedCapacitor:TPS60400DBV"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 6.35 8.89 0)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "TPS60400DBV"
-				(at 7.62 -8.89 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps60400.pdf"
-				(at 0 -22.86 0)
+			(property "Footprint" ""
+				(at -1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -289,7 +286,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unregulated 60-mA Charge Pump Voltage Inverter with Variable Switching Frequency 50 kHz - 250 kHz, SOT-23-5"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -298,7 +295,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "unregulated charge pump inverter variable switching frequency"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -307,7 +304,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -316,58 +313,33 @@
 					(hide yes)
 				)
 			)
-			(symbol "TPS60400DBV_1_1"
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
 				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "OUT"
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -383,9 +355,236 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 0 180)
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_SwitchedCapacitor:LM27761"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM27761"
+				(at 3.302 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+				(at 3.81 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm27761.pdf"
+				(at 63.5 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "low-noise regulated switched-capacitor voltage inverter with 2.7V-5.5V input to -1.5 to -5V Output Voltage, WSON-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "low-noise switched capacitor voltage converter invert"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP?2x2mm*P0.5mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM27761_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM27761_1_1"
+				(pin power_in line
+					(at -10.16 7.62 0)
 					(length 2.54)
-					(name "C_{FLY+}"
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "C+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "C-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VFB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -400,10 +599,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 10.16 -5.08 180)
+				(pin power_out line
+					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "C_{FLY-}"
+					(name "CPOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -649,171 +848,331 @@
 		)
 	)
 	(junction
-		(at 119.38 62.23)
+		(at 118.11 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8cc3cd4a-7a30-44c1-89f4-7aa510cfa1a1")
+		(uuid "061ea4e4-8137-4925-be2d-6b56921b41cd")
 	)
 	(junction
-		(at 133.35 77.47)
+		(at 132.08 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "90b34480-2d46-4ddd-9818-01f2d68e0f6f")
+		(uuid "3b5b6d7f-19ee-4300-af9c-cee568f03e1b")
 	)
 	(junction
-		(at 115.57 62.23)
+		(at 115.57 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d5a2c298-4c11-495e-b0dd-12a28fdd6a2b")
+		(uuid "4a9b00e6-cb40-4ea8-ac21-9961410c1d38")
 	)
 	(junction
-		(at 160.02 62.23)
+		(at 160.02 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ef8d2d46-3039-4096-b40a-8ff0ed17999b")
+		(uuid "4c33b794-194a-4be3-8a41-ddf58fe29ad2")
+	)
+	(junction
+		(at 146.05 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a74a131-aff4-45a2-a99d-e4526fc506b3")
+	)
+	(junction
+		(at 132.08 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69a1a5c8-1907-420d-b764-d5f3764cb079")
+	)
+	(junction
+		(at 153.67 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "877779a2-3c86-4707-bd84-fb164bc2bd57")
+	)
+	(junction
+		(at 114.3 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89b179df-ac38-4e9c-8607-173eddafc374")
+	)
+	(junction
+		(at 146.05 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c78bc010-1d39-42db-bf11-4871571e391e")
 	)
 	(wire
 		(pts
-			(xy 143.51 72.39) (xy 143.51 73.66)
+			(xy 119.38 64.77) (xy 121.92 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "013b3355-18f0-4db3-b461-2d7a82a7271e")
+		(uuid "066eb5d4-86f1-4c1d-9ff1-1a1fe809faf3")
 	)
 	(wire
 		(pts
-			(xy 119.38 69.85) (xy 119.38 77.47)
+			(xy 118.11 59.69) (xy 118.11 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07c81c09-f760-4529-a028-1ce396e981bc")
+		(uuid "08f26e4a-b92a-45b4-8d9c-133b3a406c2f")
 	)
 	(wire
 		(pts
-			(xy 143.51 62.23) (xy 160.02 62.23)
+			(xy 153.67 57.15) (xy 153.67 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "087e98e4-a6f4-4bb0-8ab9-58563114c40a")
+		(uuid "229990d4-0c4f-47cc-8d46-823f919de6ad")
 	)
 	(wire
 		(pts
-			(xy 119.38 77.47) (xy 133.35 77.47)
+			(xy 111.76 80.01) (xy 115.57 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2036ea82-c353-4699-88b0-f850ca2892d8")
+		(uuid "311a834a-1002-41f1-ab70-ba947db8d66d")
 	)
 	(wire
 		(pts
-			(xy 160.02 69.85) (xy 160.02 77.47)
+			(xy 146.05 64.77) (xy 146.05 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3360c797-f78e-4a33-be5c-03206070f8ba")
+		(uuid "3622f26b-12c9-46d3-a57a-b0d492e414c6")
 	)
 	(wire
 		(pts
-			(xy 115.57 62.23) (xy 119.38 62.23)
+			(xy 119.38 72.39) (xy 121.92 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e33b24e-8f6f-4033-81be-e1df45429d95")
+		(uuid "36e39789-2410-4d1a-8e14-188b564f712d")
 	)
 	(wire
 		(pts
-			(xy 119.38 62.23) (xy 123.19 62.23)
+			(xy 114.3 57.15) (xy 118.11 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55c2494f-3384-49b9-a68c-1d34ee01665b")
+		(uuid "42d45ee3-3538-45af-a1fd-c099525c7b1b")
 	)
 	(wire
 		(pts
-			(xy 160.02 77.47) (xy 133.35 77.47)
+			(xy 132.08 81.28) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c25cd7f-b952-47f0-ad1c-f53132c8724c")
+		(uuid "4812c743-b355-4892-9dcc-0498d17e36d7")
 	)
 	(wire
 		(pts
-			(xy 143.51 73.66) (xy 151.13 73.66)
+			(xy 152.4 64.77) (xy 146.05 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a44780c3-386e-4296-941c-2ffaae0d335b")
+		(uuid "4d89b3e1-5cc5-4dbd-b775-6baa48dd5a60")
 	)
 	(wire
 		(pts
-			(xy 143.51 66.04) (xy 151.13 66.04)
+			(xy 115.57 80.01) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af6ef0f6-1b62-4b96-87ca-a84b2baeb9bd")
+		(uuid "57101689-3073-4fb8-a3b8-85c80a5c4b42")
 	)
 	(wire
 		(pts
-			(xy 107.95 62.23) (xy 115.57 62.23)
+			(xy 160.02 64.77) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bbf9616c-cf14-4b09-916e-9df936e07156")
+		(uuid "593e706f-9c36-482f-9968-0de8edf1b014")
 	)
 	(wire
 		(pts
-			(xy 143.51 67.31) (xy 143.51 66.04)
+			(xy 118.11 57.15) (xy 121.92 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f5cdbdd4-4f88-422b-935f-885e79dd3e31")
+		(uuid "59499c0c-b768-4609-be31-e43af0a34c3d")
 	)
 	(wire
 		(pts
-			(xy 133.35 77.47) (xy 133.35 80.01)
+			(xy 146.05 80.01) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ff3e9fbe-2371-4f9f-997b-2fb3536c0147")
+		(uuid "5d74dade-d864-4e81-893d-2a7de907c694")
+	)
+	(wire
+		(pts
+			(xy 146.05 80.01) (xy 160.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f0d81d8-102f-4b0e-859a-8038ae909754")
+	)
+	(wire
+		(pts
+			(xy 160.02 80.01) (xy 160.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d3d643f-3ed9-41c9-aa83-5caa24109c12")
+	)
+	(wire
+		(pts
+			(xy 142.24 67.31) (xy 146.05 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b04d1fb0-56dc-4d44-a7a1-b3f5afe2d661")
+	)
+	(wire
+		(pts
+			(xy 121.92 59.69) (xy 118.11 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05c462b-1ca1-430a-9492-670b32493397")
+	)
+	(wire
+		(pts
+			(xy 132.08 77.47) (xy 134.62 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b214a7a7-ebf9-4ab0-afb1-a5c3b620918c")
+	)
+	(wire
+		(pts
+			(xy 152.4 68.58) (xy 152.4 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d30c37-cecf-47c5-82eb-3d302e944469")
+	)
+	(wire
+		(pts
+			(xy 142.24 57.15) (xy 153.67 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a2d5ee-4098-4394-9a53-f6445d18db9c")
+	)
+	(wire
+		(pts
+			(xy 146.05 74.93) (xy 146.05 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77e30d3-5c3d-4920-ad1a-1a6e800c63d5")
+	)
+	(wire
+		(pts
+			(xy 111.76 57.15) (xy 114.3 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce03818c-fa1f-4ce8-899d-a7c4ae00cf6e")
+	)
+	(wire
+		(pts
+			(xy 132.08 80.01) (xy 132.08 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e20bdb0e-e2ef-4a9c-b581-fa21c9fb0a72")
+	)
+	(wire
+		(pts
+			(xy 142.24 62.23) (xy 146.05 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e81a94f6-2d21-4b86-9787-9bc14cad22dc")
+	)
+	(wire
+		(pts
+			(xy 153.67 57.15) (xy 160.02 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc7d008-0d89-4390-adb4-b80bd2b9c3ff")
+	)
+	(wire
+		(pts
+			(xy 111.76 64.77) (xy 111.76 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feadae5a-8c86-4326-9222-c05295884d84")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 115.57 62.23 0)
+		(lib_id "Device:C")
+		(at 146.05 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "102c529f-a11e-40ab-b2a1-80bc2fb8fead")
-		(property "Reference" "TP1"
-			(at 118.11 57.6579 0)
+		(uuid "0aff0d66-d8ff-4120-80f7-9a0f84ecef34")
+		(property "Reference" "C2"
+			(at 149.86 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,8 +1180,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 118.11 60.1979 0)
+		(property "Value" "4.7uF"
+			(at 149.86 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -830,8 +1189,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 120.65 62.23 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 147.0152 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,7 +1199,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 62.23 0)
+			(at 146.05 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "22a617d5-ce24-465b-a692-662e6fabe484")
+		)
+		(pin "1"
+			(uuid "4a36b48c-f7d5-4681-a876-9c0afdf9b5f4")
+		)
+		(instances
+			(project "inverter"
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 115.57 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14c96381-fa57-4478-943a-5f4e2f210b3f")
+		(property "Reference" "TP2"
+			(at 118.11 75.4379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 118.11 77.9779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -849,7 +1278,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 115.57 62.23 0)
+			(at 115.57 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -858,7 +1287,279 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b394177-18a5-4f18-bf05-e692c605a57e")
+			(uuid "1b193778-aaf0-43e5-9eb9-bcd1b3348c26")
+		)
+		(instances
+			(project "inverter"
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 160.02 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "270eac6c-7dc0-4f3e-9e12-45d14aa2844a")
+		(property "Reference" "C4"
+			(at 163.83 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 163.83 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 160.9852 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 160.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bbdc2d28-b902-452d-99a2-fb6dac2dc1bf")
+		)
+		(pin "1"
+			(uuid "40ff196b-f9dc-444e-9d57-59826d67ea28")
+		)
+		(instances
+			(project "inverter"
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "373a3c0e-b1ca-4c6b-ae73-84d1921b40b5")
+		(property "Reference" "R2"
+			(at 156.21 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500k"
+			(at 156.21 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 156.21 70.358 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6b8ddca-8ff9-485a-ae19-64f3ec68d996")
+		)
+		(pin "2"
+			(uuid "cf9855ce-feb3-4ea9-9f00-3beb7a88d601")
+		)
+		(instances
+			(project "inverter"
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 149.86 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4503b9b8-3595-41a3-947e-d2bf950e2f58")
+		(property "Reference" "R1"
+			(at 149.86 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.54M"
+			(at 149.86 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 149.86 64.008 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 149.86 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7e3711d-1ef5-4999-bd56-21408ed44412")
+		)
+		(pin "2"
+			(uuid "6e5d49b1-0f79-44dc-b293-982f1eef5084")
+		)
+		(instances
+			(project ""
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 114.3 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "65784e2f-9764-4b93-9c65-026de457d656")
+		(property "Reference" "TP1"
+			(at 104.902 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 104.902 55.626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 114.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bf3e0e0-cbdb-44c1-9b37-6af0b03ea95b")
 		)
 		(instances
 			(project ""
@@ -871,86 +1572,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 160.02 66.04 0)
+		(at 111.76 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "54d2c9e2-b362-4737-9e25-4fa68fddab3a")
-		(property "Reference" "C4"
-			(at 163.83 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 163.83 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 160.9852 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 160.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15b8fe0a-c513-4496-858c-b46fa49fa997")
-		)
-		(pin "2"
-			(uuid "a6b7fa01-8b97-42a0-80c3-3c6e44457c73")
-		)
-		(instances
-			(project "inverter"
-				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 151.13 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c7f51ba-eb5f-46ce-8973-f0022ab5e37e")
+		(uuid "74e71880-e0bd-4603-aef2-865c0f0bf77b")
 		(property "Reference" "C1"
-			(at 154.94 68.5799 0)
+			(at 115.57 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,8 +1589,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 154.94 71.1199 0)
+		(property "Value" "4.7uF"
+			(at 115.57 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +1599,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 152.0952 73.66 0)
+			(at 112.7252 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +1608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 69.85 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +1617,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 151.13 69.85 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -994,14 +1625,14 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "1aa2d23c-c161-446a-a1d8-88c4c524ca1f")
-		)
 		(pin "2"
-			(uuid "468044fc-1bca-48d6-8671-61c568b95a08")
+			(uuid "81cc04f2-fdb3-4015-b7f2-bf209b461dc6")
+		)
+		(pin "1"
+			(uuid "43d44362-0828-4130-aa67-bb4931732c16")
 		)
 		(instances
-			(project "inverter"
+			(project ""
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
 					(reference "C1")
 					(unit 1)
@@ -1010,8 +1641,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_SwitchedCapacitor:LM27761")
+		(at 132.08 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7860a017-6deb-4609-8e52-212ae17c13b8")
+		(property "Reference" "U1"
+			(at 132.08 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM27761"
+			(at 132.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+			(at 135.89 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm27761.pdf"
+			(at 195.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "low-noise regulated switched-capacitor voltage inverter with 2.7V-5.5V input to -1.5 to -5V Output Voltage, WSON-8"
+			(at 132.08 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ce902d15-e07f-4910-bfbd-3f0dcd388b77")
+		)
+		(pin "5"
+			(uuid "db967494-faf8-4ac8-8bcf-64338514d46b")
+		)
+		(pin "4"
+			(uuid "56463308-3145-4492-bcc6-89aff9da84f9")
+		)
+		(pin "9"
+			(uuid "0b996fd7-55f5-473a-9c49-e73f12ad693d")
+		)
+		(pin "2"
+			(uuid "87bf9ebc-74ee-4d24-9986-a6959f213985")
+		)
+		(pin "7"
+			(uuid "2d742aeb-f312-4662-808c-98e928458782")
+		)
+		(pin "8"
+			(uuid "5bbdcef9-2b8a-48ba-b173-a662562b16ef")
+		)
+		(pin "6"
+			(uuid "ddc385ee-3428-4ffa-9b93-873b9f3c6774")
+		)
+		(pin "1"
+			(uuid "fcdbc02d-ff11-4ec4-ab12-6536f1c0aa34")
+		)
+		(instances
+			(project ""
+				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 107.95 62.23 0)
+		(at 118.11 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1020,7 +1741,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d2d0703-e938-4bae-b2b8-2c3f2dcffb12")
 		(property "Reference" "#PWR01"
-			(at 107.95 66.04 0)
+			(at 118.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1029,7 +1750,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 107.95 57.15 0)
+			(at 118.11 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1037,7 +1758,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 62.23 0)
+			(at 118.11 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1046,7 +1767,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 62.23 0)
+			(at 118.11 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1055,7 +1776,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 107.95 62.23 0)
+			(at 118.11 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,17 +1797,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 160.02 62.23 0)
+		(lib_id "Device:C")
+		(at 119.38 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cc8bd110-5e5a-4aa2-a35b-f7137a7f0552")
-		(property "Reference" "TP2"
-			(at 162.56 57.6579 0)
+		(uuid "c0a81354-3040-4de2-977c-3352907a23ed")
+		(property "Reference" "C3"
+			(at 123.19 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1094,8 +1815,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 162.56 60.1979 0)
+		(property "Value" "1uF"
+			(at 123.19 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1103,8 +1824,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 165.1 62.23 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 120.3452 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1113,7 +1834,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 62.23 0)
+			(at 119.38 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1121,22 +1842,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 160.02 62.23 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 119.38 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "7c43e123-c266-442e-a2bd-e112a12a62f0")
 		)
 		(pin "1"
-			(uuid "d6fb2bcf-c6d4-4230-9c65-d1d7be957bec")
+			(uuid "ce306c5b-1135-4b1f-8666-2279b349bdea")
 		)
 		(instances
 			(project "inverter"
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "TP2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -1144,7 +1868,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 80.01 0)
+		(at 132.08 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1153,7 +1877,7 @@
 		(fields_autoplaced yes)
 		(uuid "d78e7a19-db7d-4c5e-8f0f-218929c7495c")
 		(property "Reference" "#PWR02"
-			(at 133.35 86.36 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1162,7 +1886,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 85.09 0)
+			(at 132.08 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1170,7 +1894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 80.01 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,7 +1903,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 80.01 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1188,7 +1912,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.35 80.01 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1209,94 +1933,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_SwitchedCapacitor:TPS60400DBV")
-		(at 133.35 67.31 0)
+		(lib_id "Connector:TestPoint")
+		(at 153.67 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e3b3151d-7825-4981-8e93-e999555285b4")
-		(property "Reference" "U2"
-			(at 133.35 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS60400DBV"
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 133.35 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps60400.pdf"
-			(at 133.35 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unregulated 60-mA Charge Pump Voltage Inverter with Variable Switching Frequency 50 kHz - 250 kHz, SOT-23-5"
-			(at 133.35 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "fd82c909-5bda-4be7-b9ed-62563f52d942")
-		)
-		(pin "5"
-			(uuid "bce96a28-15b9-4cd6-8b8c-19fa8a4cb8b1")
-		)
-		(pin "1"
-			(uuid "36e9a5de-d062-458a-8b54-410fd19c235e")
-		)
-		(pin "4"
-			(uuid "7397b3fc-25da-4e63-9b53-39ac5f5a1ecc")
-		)
-		(pin "2"
-			(uuid "d2df7581-e1df-4d3b-b5ef-280c94f419ad")
-		)
-		(instances
-			(project ""
-				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 119.38 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f627175d-17c4-42d3-8cbb-e5bfd59e75f8")
-		(property "Reference" "C3"
-			(at 123.19 64.7699 0)
+		(uuid "d79e552d-be43-4eeb-ae87-e0bafa0aabc4")
+		(property "Reference" "TP3"
+			(at 156.21 52.5779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,8 +1951,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 123.19 67.3099 0)
+		(property "Value" "TestPoint"
+			(at 156.21 55.1179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,8 +1960,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 120.3452 69.85 0)
+		(property "Footprint" ""
+			(at 158.75 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1323,7 +1970,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 66.04 0)
+			(at 158.75 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,8 +1978,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 119.38 66.04 0)
+		(property "Description" "test point"
+			(at 153.67 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1341,15 +1988,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd894bf5-68b8-44fd-aec9-81ab5162f422")
-		)
-		(pin "2"
-			(uuid "8c45c7b6-c770-4d30-ab91-0183f2a7fd25")
+			(uuid "a4467fdf-61e4-44a3-af6e-eb18d34e4d37")
 		)
 		(instances
-			(project ""
+			(project "inverter"
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "C3")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
