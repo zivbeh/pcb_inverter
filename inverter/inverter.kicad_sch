@@ -1241,7 +1241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14c96381-fa57-4478-943a-5f4e2f210b3f")
-		(property "Reference" "TP2"
+		(property "Reference" "GND"
 			(at 118.11 75.4379 0)
 			(effects
 				(font
@@ -1259,7 +1259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 120.65 80.01 0)
 			(effects
 				(font
@@ -1292,7 +1292,7 @@
 		(instances
 			(project "inverter"
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "TP2")
+					(reference "GND")
 					(unit 1)
 				)
 			)
@@ -1513,7 +1513,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65784e2f-9764-4b93-9c65-026de457d656")
-		(property "Reference" "TP1"
+		(property "Reference" "Vin"
 			(at 104.902 53.086 0)
 			(effects
 				(font
@@ -1531,7 +1531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 119.38 57.15 0)
 			(effects
 				(font
@@ -1564,7 +1564,7 @@
 		(instances
 			(project ""
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "TP1")
+					(reference "Vin")
 					(unit 1)
 				)
 			)
@@ -1942,7 +1942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d79e552d-be43-4eeb-ae87-e0bafa0aabc4")
-		(property "Reference" "TP3"
+		(property "Reference" "Vout"
 			(at 156.21 52.5779 0)
 			(effects
 				(font
@@ -1960,7 +1960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 158.75 57.15 0)
 			(effects
 				(font
@@ -1993,7 +1993,7 @@
 		(instances
 			(project "inverter"
 				(path "/2bdfe88c-c6df-4e2d-a04c-7efbac4b66ea"
-					(reference "TP3")
+					(reference "Vout")
 					(unit 1)
 				)
 			)
