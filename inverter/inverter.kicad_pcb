@@ -374,7 +374,7 @@
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "GND1"
-			(at 0.1 1.7 0)
+			(at -0.4 1.8 0)
 			(layer "F.SilkS")
 			(uuid "428de085-7981-4713-9277-00f9bdfd1b6e")
 			(effects
@@ -477,7 +477,7 @@
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "Vin1"
-			(at 0 -1.648 0)
+			(at -1.3 1.6 0)
 			(layer "F.SilkS")
 			(uuid "fc95fd27-6c98-46bd-93a1-fe8280bb54df")
 			(effects
@@ -580,7 +580,7 @@
 		(descr "8-Lead Plastic WSON, 2x2mm Body, 0.5mm Pitch, WSON-8, http://www.ti.com/lit/ds/symlink/lm27761.pdf")
 		(tags "WSON 8 1EP")
 		(property "Reference" "U1"
-			(at 0.15 -2.85 90)
+			(at -0.05 -2.05 90)
 			(layer "F.SilkS")
 			(uuid "9bbd34d0-3c13-414f-9f8d-c461684b4703")
 			(effects
@@ -1544,6 +1544,30 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(gr_rect
+		(start 146 90)
+		(end 161.6 103)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "a5501f22-1ac6-4e20-a0b8-4eebda7fc20d")
+	)
+	(gr_text "02/17/2026 Liwei Lin Lab - Ziv Behar"
+		(at 146.1 91 0)
+		(layer "F.Cu")
+		(uuid "881249c2-2028-42d9-ad93-253c9d4eea89")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(segment
