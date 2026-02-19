@@ -12,6 +12,8 @@ Each converter requires:
 ## Final Board Size:
 -- 22.6mm x 13.4mm
 
+<img width="1085" height="646" alt="image" src="https://github.com/user-attachments/assets/4e0c0998-8c8e-47b4-9a2d-ca49dbcc7ce9" />
+
 ---
 
 ## I/O Pinout
