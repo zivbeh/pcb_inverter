@@ -57,7 +57,7 @@ Each converter requires:
 
 ## License
 Choose one:
-- **CERN-OHL-S-2.0**
+- **MIT**
 
 ---
 
