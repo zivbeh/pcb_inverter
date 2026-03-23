@@ -51,7 +51,7 @@ Each converter requires:
   https://www.analog.com/media/en/technical-documentation/data-sheets/3261fb.pdf
 
 - LM27761 datasheet (:contentReference[oaicite:1]{index=1}):  
-  https://www.ti.com/lit/ds/symlink/lm27761.pdf?utm_source=chatgpt.com
+  https://www.ti.com/lit/ds/symlink/lm27761.pdf
 
 ---
 
